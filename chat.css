@@ -1,0 +1,183 @@
+/* Full-page background image */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('chatimage.jpg') no-repeat center center/cover;
+    z-index: -1;
+}
+
+/* Glassmorphism Navbar */
+.nav {
+    background: rgba(255, 0, 0, 0.2); /* Translucent Red */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+
+.logo-container {
+    text-decoration: none; /* Removes underline */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-container p {
+    text-decoration: none; /* Ensures text is not underlined */
+    color: white; /* Keeps the color unchanged */
+}
+
+.logo-container:hover {
+    cursor: pointer; /* Makes it clear that it's clickable */
+}
+
+/* Logo Styling */
+.logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* EduSocial Text Styling */
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'IM Fell Great Primer', serif;
+    color: white;
+}
+
+/* Body */
+body {
+    font-family: "IM Fell Great Primer", serif !important;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;    
+}
+
+/* Glassmorphism Styling */
+.glass {
+    background: rgba(255, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#chatBox {
+    margin-top: 20px; /* Adjust spacing as needed */
+    width: 60%;
+    height: 400px; /* Fixed height for scrolling */
+    overflow-y: auto; /* Enable scrolling */
+    background: rgba(255, 0, 0, 0.2); /* Keep your translucent red theme */
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2); /* Keep the glossy effect */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fix input bar at the bottom */
+#chatInput {
+    width: 60%;
+    display: flex;
+    position: fixed;
+    bottom: 10px; /* Adjust spacing from bottom */
+    background: rgba(255, 0, 0, 0.2); /* Match your theme */
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2);
+    margin-bottom: 20px; /* Adds space between input and bottom */
+
+}
+
+/* Message Input */
+#messageInput {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+#messageInput::placeholder {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    
+}
+
+.message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    background: rgba(255, 0, 0, 0.2); /* Glossy translucent red */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    font-size: 16px;
+}
+
+.message-content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+/* Username on the left */
+.message .username {
+    font-weight: bold;
+    text-align: left;
+    flex: 1;
+}
+
+/* Message in the center */
+.message .chat-text {
+    text-align: center;
+    flex: 2;
+}
+
+/* Timestamp on the right */
+.message .timestamp {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: right;
+    flex: 1;
+}
+
+/* Glass Buttons */
+.glass-btn {
+    background: rgba(139, 0, 0, 0.6);
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 8px rgba(139, 0, 0, 0.4);
+}
+
+.glass-btn:hover {
+    background: rgba(178, 34, 34, 0.7);
+}

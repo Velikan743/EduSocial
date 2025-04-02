@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSocial Chat</title>
+    <link rel="stylesheet" href="chat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background"></div> <!-- Background Image -->
+
+    <header class="nav">
+
+        <a href="index.html" class="logo-container">
+            <img src="logoimg.png" alt="EduSocial Logo" class="logo"> <!-- Logo -->
+            <p class="logo-text">EduSocial</p> <!-- Text -->
+        </a>
+        <button id="homeBtn" class="glass-btn">Home</button>
+    </header>
+
+    <main id="chatBox" class="glass">
+        <!-- Messages will be loaded here dynamically -->
+    </main>
+
+    <div id="chatInput" class="glass">
+        <input type="text" id="messageInput" placeholder="Type a message...">
+        <button id="sendBtn" class="glass-btn">Send</button>
+    </div>
+
+    <script src="chat.js"></script>
+
+    <script src="utils.js"></script>
+
+</body>
+</html>

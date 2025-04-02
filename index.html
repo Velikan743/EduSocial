@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSocial - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background"></div> <!-- Background Image -->
+    
+    <header class="nav">
+        <div class="logo-container">
+            <img src="logoimg.png" alt="EduSocial Logo" class="logo"> <!-- Logo -->
+            <p class="logo-text">EduSocial</p> <!-- Text -->
+        </div>
+        <button id="chatBtn" class="glass-btn">Chat</button>
+        <button id="logoutBtn" class="glass-btn">Logout</button>
+    </header>    
+
+    <!-- Search Bar -->
+    <div id="searchContainer" class="glass">
+        <input type="text" id="searchInput" placeholder="Search by username">
+        <button id="searchBtn" class="glass-btn">Search</button>
+    </div>
+
+    <main id="feed" class="glass">
+        <!-- Posts will be loaded here -->
+    </main>
+
+    <button id="postBtn" class="glass-btn">+</button>
+
+    <div id="uploadPopup" class="popup">
+        <div class="popup-content glass">
+            <span id="closePopup">&times;</span>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" id="fileInput" name="file" required>
+                <p id="fileName"></p>
+                <button type="submit" class="glass-btn">Upload</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

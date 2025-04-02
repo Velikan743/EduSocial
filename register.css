@@ -1,0 +1,116 @@
+body {
+    font-family: "IM Fell Great Primer", serif    !important;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    transition: transform 0.5s ease-in-out;
+}
+h2 {
+    color: black;
+}
+.container {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+}
+
+/* Left side: Registration form */
+.register-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.register-container {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    width: 300px;
+}
+
+/* Right: Image Section */
+.image-section {
+    width: 50%;
+    background: url('registerpageimage.jpg') no-repeat center center/cover;
+}
+
+label {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+
+
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #ccc; /* Underline effect */
+    border-radius: 8px; /* Rounded edges */
+    outline: none;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.5); /* Translucent effect */
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px; /* Increased spacing between inputs */
+    font-family: "IM Fell Great Primer", serif;
+
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.5); /* Translucent placeholder */
+
+}
+
+input:focus {
+    border-bottom: 2px solid #3b82f6; /* Changes underline color when typing */
+    background: rgba(255, 255, 255, 0.8); /* Slightly more solid on focus */
+}
+button {
+    width: auto; /* Adjust width based on content */
+    padding: 8px 16px; /* Smaller padding for a compact button */
+    background-color: #3b82f6;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 20px; /* Curved edges */
+    display: block;
+    margin: 10px auto; /* Center the button */
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+p {
+    margin-top: 15px;
+}
+
+a {
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Right side: Image */
+.image-section {
+    width: 50%;
+    background: url('registerpageimage.jpg') no-repeat center center/cover;
+}
